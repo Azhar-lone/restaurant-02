@@ -10,9 +10,18 @@ export default function Footer() {
             {siteConfig.name.toUpperCase()}
           </h3>
           <p className="text-foreground/40 text-sm mb-4">
-            {siteConfig.name} ©2023 All Rights Reserved
+            {siteConfig.name} ©2025 All Rights Reserved
           </p>
-          <p className="text-foreground/40 text-sm">By - {siteConfig.author}</p>
+          <p className="text-foreground/40 text-sm flex gap-2">
+            By
+            <Link
+              href={"https://azhar-lone-portfolio.vercel.app/"}
+              target="_blank"
+              className="hover:text-primary"
+            >
+              @{siteConfig.author}
+            </Link>
+          </p>
           <h4 className="font-bold mt-6 mb-4">Follow Us On</h4>
           <div className="flex space-x-2">
             {siteConfig.socialMedia.map(({ Icon }, index) => (

@@ -8,7 +8,7 @@ import {
 
 export const siteConfig = {
   name: "Food Dash",
-  author: "Azhar",
+  author: "Azhar Lone",
   description: "Order delicious Pakistani food with fast delivery",
 
   mainNav: [

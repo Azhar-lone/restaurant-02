@@ -24,7 +24,7 @@ export function Features({ features }: FeaturesProps) {
             </div>
             <div>
               <h3 className="font-bold text-lg">{feature.title}</h3>
-              <p className="text-background/60 text-sm">{feature.description}</p>
+              <p className="text-background/80 text-sm">{feature.description}</p>
             </div>
           </div>
         ))}

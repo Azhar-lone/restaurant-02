@@ -5,12 +5,34 @@ import { siteConfig } from "@/config/site";
 import { usePathname } from "next/navigation";
 import ProfileButton from "./ProfileButton";
 import { ModeToggle } from "./mode-toggle";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY < lastScrollY) {
+        setShowHeader(true); // Scrolling up
+      } else {
+        setShowHeader(false); // Scrolling down
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
   const pathname = usePathname();
 
   return (
-    <header className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <header
+      className={`container mx-auto bg-background z-50 sticky top-0 px-4 py-4 flex justify-between items-center transition-transform duration-300 ${
+        showHeader ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="flex items-center">
         <Link href="/" className="text-primary font-bold text-xl">
           {siteConfig.name}
