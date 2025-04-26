@@ -1,10 +1,10 @@
 import { Search } from "lucide-react"
-
+import { Input } from "@/components/ui/input"
 export function SearchForm() {
   return (
     <div className="relative w-full max-w-md mx-auto mt-4">
       <div className="relative">
-        <input
+        <Input
           type="text"
           placeholder="Search for food..."
           className="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
