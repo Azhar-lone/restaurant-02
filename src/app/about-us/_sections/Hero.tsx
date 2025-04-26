@@ -8,7 +8,7 @@ const Hero = () => {
           About <span className="text-primary">Food Dash</span>
         </h1>
         <p className="text-foreground/70 max-w-2xl mx-auto">
-          Learn more about our journey, mission, and the team behind Pakistan's
+          Learn more about our journey, mission, and the team behind Pakistan&aposs
           favorite food delivery service
         </p>
       </div>

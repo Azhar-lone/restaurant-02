@@ -14,7 +14,7 @@ const OurStory = ({ author }: { author: string }) => {
           </p>
           <p className="text-foreground/70 mb-4">
             What began as a small operation in Karachi has now grown into one of
-            Pakistan's most loved food delivery platforms, serving thousands of
+            Pakistan&aposs most loved food delivery platforms, serving thousands of
             customers daily across multiple cities.
           </p>
           <p className="text-foreground/70">
