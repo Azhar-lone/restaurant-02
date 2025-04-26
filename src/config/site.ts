@@ -317,6 +317,6 @@ export const siteConfig = {
     "+92123456789",
     "Example",
     "info@fooddash.com",
-    "15, Karachi, Pakistan",
+    "15, Gilgit, Pakistan",
   ],
 };
