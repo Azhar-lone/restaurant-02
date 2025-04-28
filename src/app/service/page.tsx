@@ -4,6 +4,11 @@ import How from "./_sections/how-it-works";
 import Areas from "./_sections/Areas";
 import ContactUs from "./_sections/contact-us";
 
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Services",
+};
+
 export default function ServicePage() {
   return (
     <main>

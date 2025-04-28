@@ -3,6 +3,10 @@ import { MenuCategories } from "./_sections/menu-categories";
 import { MenuItems } from "./_sections/menu-items";
 import { SearchForm } from "./_sections/search-form";
 
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Menu",
+};
 export default function MenuPage() {
   return (
     <section>
